@@ -4,7 +4,7 @@ Repositorio para el proyecto de Desarrollo de Aplicaciones Web
 Miembros:
 
 Blancard Luis
-Gomez Guiredis
+Gomez Guiredys
 Rodriguez Gabriel
 Hernandez Pedro
 Villegas Obed
