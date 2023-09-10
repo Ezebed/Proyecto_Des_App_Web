@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from proyecto.views.index import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # path( "como se va a ver la URL" , <nombre de la vista>, name=<nombre interno de esta direccion> )
+    # ejemplo: esta direccion se veria de esta manera en el navegador
+    # 127.0.0.1
+    path("", index, name="index"),
 ]
