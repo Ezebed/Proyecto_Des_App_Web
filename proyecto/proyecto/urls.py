@@ -25,4 +25,7 @@ urlpatterns = [
     # ejemplo: esta direccion se veria de esta manera en el navegador
     # 127.0.0.1
     path("", index, name="index"),
+
+    # prueba de una redireccion a partir del nombre de la misma
+    path('redireccionPrueba/', redireccionPrueba )
 ]
