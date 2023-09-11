@@ -1,4 +1,5 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.urls import reverse
 from django.shortcuts import render
 from django.template import loader
 
@@ -10,3 +11,9 @@ def index(request):
     contex = { "nombreProyecto" : "Intranet de la UC" }
     # por ultimo retornamos la plantilla cargando el contexto que tiene el valor de las variables
     return HttpResponse(template.render(contex))
+
+
+
+# prueba de como hacer una redireccion a otra vbista a partir del el nombre de la misma
+def redireccionPrueba (request):
+    return HttpResponseRedirect(reverse('index'))
