@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
-</head>
-<body>
-    <h1 class="font-bold" >esta es la pagina principal del proyecto "{{nombreProyecto}}"</h1>
-</body>
-</html>
+{% extends 'layouts/principal.html' %}
+
+
+{% block title %} Index {% endblock %}
+
+
+{% block content %}
+
+
+    <div class="fondoFacyt" >
+    </div>
+    <h1 class="font-bold px-4" >esta es la pagina principal del proyecto "{{nombreProyecto}}"</h1>
+
+    <footer class="fixed bottom-0 left-0 h-10 w-screen bg-blue-400">
+
+    </footer>
+
+{% endblock %}
