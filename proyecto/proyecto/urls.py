@@ -15,8 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from proyecto.views.index import *
+from django.urls import path, include
+from proyecto.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,10 @@ urlpatterns = [
     # ejemplo: esta direccion se veria de esta manera en el navegador
     # 127.0.0.1
     path("", index, name="index"),
+
+    # con include coloco todas las urls del modulo User/urls.py y se agregan al final de la ruta
+    # ex: 127.0.0.1/Usuarios/<URLS de Users>
+    path("Usuarios/", include('Users.urls')),
 
     # prueba de una redireccion a partir del nombre de la misma
     path('redireccionPrueba/', redireccionPrueba )
