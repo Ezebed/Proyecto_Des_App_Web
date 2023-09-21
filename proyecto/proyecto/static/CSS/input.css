@@ -4,7 +4,7 @@
 
 .fondoFacyt::after {
     content: "";
-    background-image: url('/static/img/facyt logo.png');
+    background-image: url('/static/img/facyt_logo.png');
     background-size: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,4 +15,8 @@
     left: 0px;
     opacity: 0.4;
     z-index: -1;
+}
+
+* {
+    font-family: 'Open sans';
 }

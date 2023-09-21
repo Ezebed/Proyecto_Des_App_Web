@@ -1,5 +1,19 @@
-<div class="h-16 bg-blue-400" >
-    <nav>
+<!-- {% load static %} -->
+<div class="h-16 bg-blue-400 justify-between grid grid-cols-3" >
+    
+    <figure class=" w-fit h-full ml-5 py-2 flex flex-row">
+        <img class="h-12 rounded-full " src="{% static 'img/facyt_logo.png' %}" alt="imagen_de_usuario">
+        <figcaption class="my-auto ml-3" >
+            <p class="font-bold text-zinc-900" >Nombre Usuario</p>
+        </figcaption>
+    </figure>
+    
+    <div class="flex flex-row w-full bg-blue-200 rounded-lg my-4 mx-auto py-1" >
+        <img class="w-7 mx-2" src="{% static 'img/icons/search.svg' %}" alt="icono-lupa">
+        <input class="placeholder-blue-400 appearance-none border-none w-full bg-transparent outline-none" type="text" placeholder="Buscar...">
+    </div>
 
-    </nav>
+    <div class="ml-auto ">
+        <img class="mr-2 h-10 mt-3.5" src="{% static 'img/icons/settings.svg' %}" alt="icono-setting">
+    </div>
 </div>
