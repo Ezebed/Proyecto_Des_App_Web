@@ -1,0 +1,5 @@
+{% load static %}
+<a class="block w-56 h-fit bg-blue-200 border-solid border-2 border-blue-400 rounded-3xl hover:scale-110 transition ease-in-out" href="{% url href %}">
+    <img class="w-full" src="{% static  src %}" alt="{{ alt }}">
+    <p class="w-fit mx-auto font-bold text-3xl">{{ texto }}</p>
+</a>

@@ -10,7 +10,7 @@ def index(request):
     # cargamos las variables en formato json
     contex = { "nombreProyecto" : "Intranet de la UC" }
     # por ultimo retornamos la plantilla cargando el contexto que tiene el valor de las variables
-    return HttpResponse(template.render(contex))
+    return render(request, 'proyecto/index.html', {'user':'Obed',})
 
 
 

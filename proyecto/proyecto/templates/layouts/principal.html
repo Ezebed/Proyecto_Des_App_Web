@@ -7,16 +7,24 @@
     <link rel="stylesheet" href='{% static "CSS/output.css" %}''>
     <title>{% block title %}  {% endblock %}</title>
 </head>
-<body>
+<body class="fondoFacyt">
     <header>
-        {% include 'components/navegacion.html' %}
+        {% block navegacion %}{% endblock %}
         {% block header %} {% endblock %}
     </header>
-    <div class="fondoFacyt" >
+
+    <div class="w-full h-full  flex flex-row" >
+        <div class=" w-8/12 h-full ">
+            {% block principal %}
+            {% endblock %}
+        </div>
+        <div class=" h-full w-4/12 ml-10 ">
+            {% block aside %}
+            {% endblock %}
+        </div>
     </div>
 
-    {% block content %}
-    {% endblock %}
+    
 
     <footer class="fixed flex bottom-0 left-0 h-10 w-screen bg-blue-400 py-2 justify-center">
         <p  >Seccion aun por definir</p>
