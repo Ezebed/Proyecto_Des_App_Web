@@ -28,7 +28,7 @@ urlpatterns = [
 
     # con include coloco todas las urls del modulo User/urls.py y se agregan al final de la ruta
     # ex: 127.0.0.1/Usuarios/<URLS de Users>
-    path("Usuarios/", include('Users.urls')),
+    path("usuarios/", include('Users.urls')),
 
     # prueba de una redireccion a partir del nombre de la misma
     path('redireccionPrueba/', redireccionPrueba )

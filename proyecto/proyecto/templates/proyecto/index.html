@@ -1,14 +1,25 @@
 {% extends 'layouts/principal.html' %}
 
+{% load static %}
 
 {% block title %} Index {% endblock %}
+
+{% block navegacion %}
+    {% include 'components/navegacion.html' with user_name=user %}
+{% endblock %}
 
 
 {% block principal %}
 
-    <div>
-        {% include 'components/button_card.html' with src='img/icons/mail.svg' alt='mail-icon' texto='Correo' %}
-        {% include 'components/button_card.html' with src='img/icons/profile.svg' alt='profile-icon' texto='Perfil' %}
+    <div class="flex flex-row justify-around mt-32 " >
+        
+        <!-- tuve que hacerlo asi porque no consegui la forma de pasarlo como argumento en el componente include -->
+        <a class="block w-56 h-fit bg-blue-200 border-solid border-2 border-blue-400 rounded-3xl hover:scale-110 transition ease-in-out" href="{% url 'profile' 'Obed' %}">
+            <img class="w-full" src="{% static  'img/icons/profile.svg' %}" alt="profile-icon">
+            <p class="w-fit mx-auto font-bold text-3xl">Perfil</p>
+        </a>
+
+        {% include 'components/button_card.html' with href="index" src='img/icons/mail.svg' alt='mail-icon' texto='Correo' %}
     </div>
     
 {% endblock %}

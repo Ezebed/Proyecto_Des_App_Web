@@ -4,4 +4,5 @@ from Users.views import *
 
 urlpatterns = [
     path('', userIndex, name='users'),
+    path('profile/<user>/', profile, name="profile"),
 ]
