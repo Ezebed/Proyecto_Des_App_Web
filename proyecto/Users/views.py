@@ -7,4 +7,4 @@ def userIndex (request):
     return render(request, 'proyecto/index.html')
 
 def profile (request, user='ejemplo'):
-    return render(request, 'proyecto/profile.html', {"user":user,})
+    return render(request, 'users/profile.html', {"user":user,})

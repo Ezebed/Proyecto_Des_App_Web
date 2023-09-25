@@ -1,0 +1,5 @@
+{% load static %}
+<a class="flex flex-row w-10/12 h-10 my-5 justify-center mx-auto bg-blue-200 border-solid border-2 border-blue-400 rounded-xl hover:scale-110 transition ease-in-out" href="{% url href %}">
+    <img class="h-full w-fit mr-3" src="{% static  src %}" alt="{{ alt }}">
+    <p class="w-fit font-bold text-3xl">{{ texto }}</p>
+</a>
