@@ -9,7 +9,7 @@
 </head>
 <body class="fondoFacyt">
     <header>
-        {% block navegacion %}{% endblock %}
+        {% include 'components/navegacion.html' with user_name=user %}
         {% block header %} {% endblock %}
     </header>
 
@@ -18,7 +18,7 @@
             {% block principal %}
             {% endblock %}
         </div>
-        <div class=" h-full w-4/12 ml-10 bg-blue-100 shadow-[-3px_0px_8px_7px_rgba(96,165,250,0.64)] ">
+        <div class="flex flex-col justify-between min-h-[520px] h-fit w-4/12 ml-10 bg-blue-100 shadow-[-3px_0px_8px_7px_rgba(96,165,250,0.64)] ">
             {% block aside %}
             {% endblock %}
         </div>

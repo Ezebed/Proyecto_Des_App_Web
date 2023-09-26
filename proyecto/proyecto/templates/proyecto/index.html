@@ -4,10 +4,6 @@
 
 {% block title %} Index {% endblock %}
 
-{% block navegacion %}
-    {% include 'components/navegacion.html' with user_name=user %}
-{% endblock %}
-
 
 {% block principal %}
 
@@ -22,4 +18,8 @@
         {% include 'components/button_card.html' with href="index" src='img/icons/mail.svg' alt='mail-icon' texto='Correo' %}
     </div>
     
+{% endblock %}
+
+{% block aside %}
+    {% include 'components/chat_box.html' %}
 {% endblock %}
