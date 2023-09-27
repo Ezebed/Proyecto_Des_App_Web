@@ -5,6 +5,26 @@
 {% block title %} {{ user }} {% endblock %}
 
 
+{% block principal %}
+
+    <figure class="flex flex-row my-auto mx-5 bg-blue-200 rounded-xl p-4 space-x-4" >
+        <img class="h-[150px] rounded-full border-2 border-solid border-blue-400 my-auto" src="{% static 'img/facyt_logo.png' %}" alt="foto-perfil">
+
+        <span class="w-2 h-[250px] bg-blue-500 rounded block" ></span>
+
+        <div class=" space-y-3 h-fit  ">
+            <h3 class=" font-bold w-fit text-3xl ">{{ user }}</h3>
+            <p class="w-fit"><span class="font-bold w-fit">Telefono:</span> xxxx-xxxxxxx</p>
+            <p class="w-fit"><span class="font-bold w-fit"> Correo:</span> ejemplo@ejemplo.com</p>
+            <p class="w-fit"><span class="font-bold w-fit"> Cargo:</span> Empleado</p>
+            
+            <p class="w-fit"><span class="font-bold w-fit">Sobre mi</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quidem porro facilis consequuntur doloribus ullam dolorem assumenda laboriosam cupiditate officiis praesentium ad maiores laudantium repudiandae amet, culpa, ducimus sequi nisi?</p>
+        </div>
+    </figure>
+
+{% endblock %}
+
+
 {% block aside %}
 
     <div class="h-1/2" >

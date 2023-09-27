@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/png">
     <link rel="stylesheet" href='{% static "CSS/output.css" %}''>
     <title>{% block title %}  {% endblock %}</title>
 </head>
@@ -14,7 +15,7 @@
     </header>
 
     <div class="w-full h-full flex flex-row" >
-        <div class=" w-8/12 h-full ">
+        <div class=" w-8/12 min-h-[520px] h-fit flex flex-col ">
             {% block principal %}
             {% endblock %}
         </div>
