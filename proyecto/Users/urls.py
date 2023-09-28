@@ -4,5 +4,6 @@ from Users.views import *
 
 urlpatterns = [
     path('', userIndex, name='users'),
-    path('profile/<user>/', profile, name="profile"),
+    path('<user>/profile/', profile, name="profile"),
+    path('<user>/mail/', mail, name="mail"),
 ]
