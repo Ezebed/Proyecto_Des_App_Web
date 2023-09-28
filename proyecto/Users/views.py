@@ -8,3 +8,6 @@ def userIndex (request):
 
 def profile (request, user='ejemplo'):
     return render(request, 'users/profile.html', {"user":user,})
+
+def mail (request, user='ejemplo'):
+    return render(request, 'users/mail.html', {'user':user,})

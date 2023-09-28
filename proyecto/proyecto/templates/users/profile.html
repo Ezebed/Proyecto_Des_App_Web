@@ -32,8 +32,11 @@
             <img class="h-full w-fit mr-3" src="{% static  'img/icons/profile.svg' %}" alt="profile-icon">
             <p class="w-fit font-bold text-3xl">Perfil</p>
         </a>
-    
-        {% include 'components/small_button_card.html' with href="index" src='img/icons/mail.svg' alt='mail-icon' texto='Correo' %}
+
+        <a class="flex flex-row w-10/12 h-10 justify-center mx-auto my-5 bg-blue-200 border-solid border-2 border-blue-400 rounded-xl hover:scale-110 transition ease-in-out" href="{% url 'mail' user %}">
+            <img class="h-full w-fit mr-3" src="{% static  'img/icons/mail.svg' %}" alt="mail-icon">
+            <p class="w-fit font-bold text-3xl">Correo</p>
+        </a>
     </div>
 
     {% include 'components/chat_box.html' %}

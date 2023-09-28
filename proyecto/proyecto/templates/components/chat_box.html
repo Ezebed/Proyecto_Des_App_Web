@@ -7,8 +7,8 @@
         <p class="self-center  h-fit w-fit font-bold text-xl" >{{user}}</p>
 
         <div class="flex h-fit w-fit self-center" >
-            <img src="{% static 'img/icons/minimize.svg' %}" alt="minimize-icon">
-            <img src="{% static 'img/icons/close.svg' %}" alt="close-icon">
+            <img class="rounded hover:bg-blue-400" src="{% static 'img/icons/minimize.svg' %}" alt="minimize-icon">
+            <img class="rounded hover:bg-blue-400" src="{% static 'img/icons/close.svg' %}" alt="close-icon">
         </div>
 
     </div>
@@ -39,10 +39,10 @@
         </div>
 
     </div>
-    <div class=" flex border-t-2 w-full p-2 justify-center border-blue-500 h-12">
+    <div class=" flex border-t-2 w-full p-2 justify-center border-blue-500 h-12 space-x-2">
         <!-- chat footer -->
-        <img class="mr-2" src="{% static 'img/icons/clipboard.svg' %}" alt="clipboard-icon">
+        <img class="rounded hover:bg-blue-400" src="{% static 'img/icons/clipboard.svg' %}" alt="clipboard-icon">
         <input class="block w-8/12 h-full border-solid border-blue-400 outline-none border-2 rounded" type="text" >
-        <img class="ml-2" src="{% static 'img/icons/send.svg' %}" alt="send_icon">
+        <img class="rounded hover:bg-blue-400" src="{% static 'img/icons/send.svg' %}" alt="send_icon">
     </div>
 </div>
